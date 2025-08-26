@@ -1,1 +1,11 @@
 node_modules
+**/build
+**/dist
+**/out
+**/coverage
+**/.next
+**/.nuxt
+**/public
+**/static
+**/tmp
+**/logs

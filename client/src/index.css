@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chip-active: #111827; /* gray-900 */
+  --chip-inactive: #e5e7eb; /* gray-200 */
+}
+.chip {
+  @apply px-3 py-1 rounded-full text-sm font-medium cursor-pointer;
+  background: var(--chip-inactive);
+  color: #111827;
+}
+.chip.active {
+  background: var(--chip-active);
+  color: white;
+}
+.status-pill {
+  @apply px-2 py-0.5 rounded-full text-xs font-semibold;
+}
+.status-HEALTHY { @apply bg-green-100 text-green-800; }
+.status-LOW { @apply bg-yellow-100 text-yellow-800; }
+.status-CRITICAL { @apply bg-red-100 text-red-800; }
+.row-critical { @apply bg-red-50; }
+.drawer {
+  @apply fixed top-0 right-0 h-full w-full sm:w-[420px] bg-white shadow-xl transform transition-transform;
+}
+.drawer-header { @apply p-4 border-b border-gray-200 flex items-center justify-between; }
+.drawer-body { @apply p-4 space-y-4; }
